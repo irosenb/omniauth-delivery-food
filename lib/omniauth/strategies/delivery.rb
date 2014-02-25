@@ -2,10 +2,17 @@ require "omniauth"
 
 module Omniauth
   module Strategies
-    class Delivery
-      include Omniauth::Strategy
+    class Delivery < Omniauth::Strategies::OAuth2
 
       option :fields, [:name, :email]
+      
+      option :client_options, {
+        :site => "api.delivery.com",
+        :authorize_url => "/third_party/authorize",
+        :token_url => "/third_party/access_token"
+      }
+
+      
     end
     
   end
