@@ -1,7 +1,2 @@
-require "omniauth/delivery/version"
-
-module Omniauth
-  module Delivery
-    # Your code goes here...
-  end
-end
+require "delivery/version"
+require "strategies/delivery.rb"
