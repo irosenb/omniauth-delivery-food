@@ -1,13 +1,14 @@
-Dir[File.expand_path('../support/**/*', __FILE__)].each { |f| require f }
+# Dir[File.expand_path('../lib/**/*', __FILE__)].each { |f| require f }
+require_relative "../lib/omniauth/delivery.rb"
 require 'bundler/setup'
 require 'rspec'
-require 'rack/test'
-require 'webmock/rspec'
+# require 'rack/test'
+# require 'webmock/rspec'
 require 'omniauth'
-require 'omniauth-delivery'
+# require 'omniauth-delivery'
 
 RSpec.configure do |config|
-  config.include WebMock::API
-  config.include Rack::Test::Methods
+  # config.include WebMock::API
+  # config.include Rack::Test::Methods
   config.extend  OmniAuth::Test::StrategyMacros, :type => :strategy
 end
