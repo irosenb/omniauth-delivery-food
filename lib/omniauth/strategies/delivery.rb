@@ -17,7 +17,7 @@ module OmniAuth
         :scope => 'global'
       }
 
-      uid { params['access_token'] }
+      uid { request.params['code'] }
 
       # info do
       #   {
@@ -30,7 +30,13 @@ module OmniAuth
         super
       end
 
-      
+      def build_access_token
+        super
+      end
+
+      def raw_info
+        @raw_info ||= JSON.parse(access_token.get(client_options[:token_url]).body)
+      end
 
     end
   end
