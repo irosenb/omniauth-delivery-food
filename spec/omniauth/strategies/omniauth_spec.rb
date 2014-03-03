@@ -5,7 +5,7 @@ describe OmniAuth::Strategies::Delivery do
     OmniAuth::Strategies::Delivery.new(nil, @options || {})
   end
 
-  describe '#client' do
+  context "endpoints" do
     it 'should have the correct delivery site' do
       expect(subject.client.site).to eq("https://api.delivery.com")
     end
