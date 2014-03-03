@@ -17,14 +17,13 @@ module OmniAuth
         :scope => 'global'
       }
 
-      uid { request.params['code'] }
+      uid { credentials['token'] }  
 
-      # info do
-      #   {
-      #     :name => raw_info['name'],
-      #     :email => raw_info['email']
-      #   }
-      # end
+      info do
+        {
+          :name => raw_info['token']
+        }
+      end
 
       def request_phase
         super
@@ -35,7 +34,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= JSON.parse(access_token.get(client_options[:token_url]).body)
+        @raw_info ||= credentials
       end
 
     end
