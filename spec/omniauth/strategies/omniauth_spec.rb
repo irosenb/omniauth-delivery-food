@@ -18,4 +18,12 @@ describe OmniAuth::Strategies::Delivery do
       expect(subject.client.token_url).to eq("https://api.delivery.com/third_party/access_token") 
     end
   end
+
+  describe "#callback_path" do
+    it "should have the correct callback path" do
+      expect(subject.callback_path).to eq("/auth/delivery/callback")
+    end
+  end
+
+
 end
