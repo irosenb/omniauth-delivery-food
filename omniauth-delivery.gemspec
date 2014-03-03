@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth/delivery/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-delivery"
+  spec.name          = "omniauth-delivery.com"
   spec.version       = Omniauth::Delivery::VERSION
   spec.authors       = ["Isaac Rosenberg"]
   spec.email         = ["irosenb7@gmail.com"]
