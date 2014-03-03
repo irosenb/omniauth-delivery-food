@@ -1,4 +1,3 @@
-# Dir[File.expand_path('../lib/**/*', __FILE__)].each { |f| require f }
 require_relative "../lib/omniauth/delivery.rb"
 require 'bundler/setup'
 require 'rspec'
