@@ -25,5 +25,10 @@ describe OmniAuth::Strategies::Delivery do
     end
   end
 
-
+  describe "#credentials" do
+    it "returns the token from credentials" do
+      subject.stub(:credentials) { { :token => '12345' } }
+      expect(subject.credentials[:token]).to eq('12345')
+    end
+  end
 end
