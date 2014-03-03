@@ -1,12 +1,12 @@
-# Omniauth::Delivery
+# Omniauth Delivery
 
-TODO: Write a gem description
+This is what I believe is the real Omniauth-delivery gem (even though someone snatched the omniauth-delivery gem before I could get it). I haven't added the sandbox URLs yet (feel free to make a pull request for that).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-delivery'
+    gem 'omniauth-delivery.com'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-delivery
+    $ gem install omniauth-delivery.com
 
 ## Usage
 
