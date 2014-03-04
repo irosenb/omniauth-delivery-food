@@ -1,4 +1,4 @@
-require_relative "../lib/omniauth/delivery.rb"
+require_relative "../lib/omniauth/delivery/food.rb"
 require 'bundler/setup'
 require 'rspec'
 require 'omniauth'

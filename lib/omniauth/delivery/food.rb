@@ -1,2 +1,2 @@
-require_relative "delivery/version.rb"
-require_relative "strategies/delivery.rb"
+require_relative "version.rb"
+require_relative "../strategies/delivery.rb"
