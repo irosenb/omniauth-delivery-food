@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["irosenb7@gmail.com"]
   spec.description   = %q{Omniauth authorization for Delivery.com API}
   spec.summary       = spec.description
-  spec.homepage      = "https://github.com/irosenb/omniauth-delivery"
+  spec.homepage      = "https://github.com/irosenb/omniauth-delivery-food"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
