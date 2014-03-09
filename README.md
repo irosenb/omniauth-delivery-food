@@ -1,6 +1,6 @@
 # Omniauth Delivery
 
-This is a Omniauth strategy for Delivery.com. I know that there is another omniauth strategy, except that it doesn't work (as of 3/4/14 getting the raw_info throws a ssl error), and I believe this is more organized. Nicer commits, more instructions, etc. Nicer person too :) 
+This is a Omniauth strategy for Delivery.com. I know that there is another [omniauth strategy](https://github.com/cubi76041/omniauth-delivery), except that it doesn't work (as of 3/4/14 getting the raw_info throws a ssl error), and I believe this is more organized. Nicer commits, more instructions, etc. Nicer person too :) 
 
 ## Installation
 
